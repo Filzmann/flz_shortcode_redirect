@@ -32,6 +32,8 @@ Keine Commits, Pushes oder Deployments ohne ausdrückliche Freigabe; nie
 - PHP-Line-Coverage wird gegen eine gemessene No-Regression-Baseline geprüft.
   Neuer oder wesentlich geänderter Code erreicht mindestens 85 Prozent;
   Sicherheitsinvarianten sind unabhängig davon vollständig abgedeckt.
+- Der PHPCOV-/Xdebug-Messjob ist vorbereitet; die PHP-Baseline bleibt bis zum
+  ersten reproduzierbaren Remote-Lauf ausdrücklich `pending`.
 - Ein Fast- oder Diagnosecheck ist kein Releaseurteil. Ein Release braucht ein
   sauberes Repository, konsistente Version/Changelog/Lizenz, vollständig
   ausgefülltes `docs/manual-acceptance.md`, ein reproduzierbares Ein-Wurzel-

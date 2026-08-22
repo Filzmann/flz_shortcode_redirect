@@ -12,6 +12,9 @@ No-Regression-Coverage, das ausgefüllte DDEV-Abnahmeprotokoll und ein
 reproduzierbar geprüftes Release-Artefakt. Das Protokoll liegt unter
 `docs/manual-acceptance.md`.
 
+Der PHPCOV-/Xdebug-Job ist konfiguriert. Eine PHP-Baseline darf erst aus dem
+reproduzierbaren Remote-Lauf übernommen werden und bleibt bis dahin `pending`.
+
 ## P1
 
 1. **Erledigt:** Fachvertrag entscheiden und dokumentieren: exakte erlaubte Hosts/Protokolle,
