@@ -4,6 +4,11 @@ Kleines WordPress-Plugin für kontrollierte Weiterleitungen aus dem bestehenden
 Shortcode `[redirect redirect="/anmeldung/"]`. Ziele werden über WordPress'
 Host- und Protokollvertrag sowie `wp_safe_redirect()` begrenzt.
 
+Der BR-starke Commit-/Coverage-/Releasevertrag wird schrittweise übernommen;
+bis zum grünen lokalen Gate bleibt ein Release blockiert. Das ausfüllbare
+[Abnahmeprotokoll](docs/manual-acceptance.md) enthält die signierten Allow-/
+Deny-, Ziel-, Ablauf- und Logging-Fälle.
+
 Angemeldete WordPress-Nutzer dürfen die Seite wie bisher sehen. Gäste benötigen
 seit 2.0.0 einen maximal eine Stunde gültigen, an die Seiten-ID gebundenen
 HMAC-Zugangslink. Dauerhafte Klartext-Secrets werden absichtlich ignoriert.
