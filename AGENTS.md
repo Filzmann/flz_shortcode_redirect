@@ -20,20 +20,19 @@ Keine Commits, Pushes oder Deployments ohne ausdrückliche Freigabe; nie
 
 ## Commit-, Coverage- und Release-Gates
 
-- Der aktuelle Übernahmestand ist Phase 1: PR-/Main-CI, Lizenz und Changelog
-  sind lokal konfiguriert. Bis zum ersten grünen Remote-Lauf und dem
-  Coverage-Gate bleiben normale Produkt- und Releasecommits blockiert;
-  ausdrücklich beauftragte Quality-Rollout-Commits dürfen die fehlende
-  Infrastruktur schrittweise herstellen.
-- Vor einem späteren normalen Commit sind Status, Diff-Statistik und vollständige
+- Der aktuelle Übernahmestand ist Phase 2: PR-/Main-CI und die PHP-Coverage-
+  Ratsche sind remote belegt. Normale Produktcommits brauchen das enforced
+  Commit-Gate; Releasecommits bleiben bis zur Abnahme und zum reproduzierbaren
+  Artefakt-Gate blockiert.
+- Vor jedem normalen Commit sind Status, Diff-Statistik und vollständige
   Dateiliste zu zeigen; fokussierte Tests, `./scripts/check-fast`, CI und
   Coverage-Gates müssen grün sein. Dateien werden einzeln gestaged;
   `git add .` bleibt verboten.
 - PHP-Line-Coverage wird gegen eine gemessene No-Regression-Baseline geprüft.
   Neuer oder wesentlich geänderter Code erreicht mindestens 85 Prozent;
   Sicherheitsinvarianten sind unabhängig davon vollständig abgedeckt.
-- Der PHPCOV-/Xdebug-Messjob ist vorbereitet; die PHP-Baseline bleibt bis zum
-  ersten reproduzierbaren Remote-Lauf ausdrücklich `pending`.
+- Der PHPCOV-/Xdebug-Messjob erzwingt eine PHP-Baseline von 65,09 Prozent; das
+  separate Ziel für neuen oder wesentlich geänderten Code bleibt 85 Prozent.
 - Ein Fast- oder Diagnosecheck ist kein Releaseurteil. Ein Release braucht ein
   sauberes Repository, konsistente Version/Changelog/Lizenz, vollständig
   ausgefülltes `docs/manual-acceptance.md`, ein reproduzierbares Ein-Wurzel-
