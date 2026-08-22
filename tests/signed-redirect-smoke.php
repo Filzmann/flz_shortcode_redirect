@@ -111,6 +111,9 @@ if ( ! str_contains( $redirect_denied, 'konnte nicht ausgeführt werden' ) ) {
 }
 
 $_GET = array();
+while ( ob_get_level() > 0 ) {
+	ob_end_flush();
+}
 echo "headers-sent-test\n";
 $fallback = flz_shortcode_redirect( array( 'redirect' => '/intern' ) );
 if ( ! str_contains( $fallback, 'href="/intern"' ) ) {
