@@ -25,6 +25,18 @@ Fall genau ein Ergebnis markieren und Abweichungen begründen.
 
 ## Manuelle Prüffälle
 
+### Technischer ZIP-Teilnachweis vom 22. August 2026
+
+- Umgebung: DDEV, WordPress 7.1, PHP 8.3, MariaDB 10.11.
+- Exaktes Artefakt: `flz_shortcode_redirect-2.0.0.zip`, Commit
+  `580a7d7e2990367d3b15c627f150f6b406809475`, SHA-256
+  `b8ae881df2fdb63ba3cd742e1212b5b77070a7d052d0053aa846161594c8239a`.
+- Reproduzierbarkeit, Archivvertrag und installierter Dateibaum sowie
+  WP-CLI-Installation, Aktivstatus, Deaktivierung, Reaktivierung und HTTP 200
+  waren erfolgreich. Snapshot- und Symlink-Rückbau waren erfolgreich.
+- Noch nicht belegt: saubere Frischinstallation und die manuellen Tests mit
+  neutraler Seite, echten kurzlebigen Signaturen und manipulierten Links.
+
 | ID | Prüfschritte | Erwartetes Ergebnis | Ergebnis | Warum / Beleg / Abweichung |
 |---|---|---|---|---|
 | RED-01 | Als angemeldetes Konto die neutrale Testseite öffnen. | Der dokumentierte Zielpfad wird sicher erreicht. | [ ] erfolgreich [ ] nicht erfolgreich [ ] nicht geprüft | |
