@@ -18,6 +18,7 @@ Fall genau ein Ergebnis markieren und Abweichungen begründen.
 
 | Nachweis | Kommando / Lauf | Ergebnis / Beleg |
 |---|---|---|
+| PR-/`main`-CI / PHP 8.1 und 8.5 | Workflow-Lauf / vollständiger Commit | |
 | Signatur-, Ziel-, Header- und Logging-Smoke | `./scripts/check-fast` | |
 | PHP-Line-Coverage / Baseline / Ziel 85 % | | |
 | Reproduzierbarkeit und Archivinhalt | | |

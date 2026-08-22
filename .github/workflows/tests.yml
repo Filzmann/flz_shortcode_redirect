@@ -1,0 +1,39 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  php:
+    name: PHP ${{ matrix.php-version }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ['8.1', '8.5']
+    steps:
+      - name: Plugin auschecken
+        uses: actions/checkout@v7
+        with:
+          path: flz_shortcode_redirect
+      - name: PHP einrichten
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+          tools: composer:v2
+      - name: Gesperrte Entwicklungsabhängigkeiten installieren
+        run: composer install --working-dir=flz_shortcode_redirect --no-interaction --no-progress --prefer-dist
+      - name: Komponentenprüfungen
+        working-directory: flz_shortcode_redirect
+        run: ./scripts/check-fast

@@ -2,12 +2,13 @@
 
 ## Prüfstatus
 
-**Funktionsstand 2.0.0; Release-Gate in Übernahmephase 0 blockiert.** Ziele werden über WordPress' Host-/Protokollvertrag
+**Funktionsstand 2.0.0; Release-Gate in Übernahmephase 1 blockiert.** Ziele werden über WordPress' Host-/Protokollvertrag
 und `wp_safe_redirect()` begrenzt. Der anonyme Zugriff nutzt eine an die
 Seiten-ID gebundene HMAC-Signatur mit höchstens 60 Minuten Lebensdauer; alte
 Klartext-Secrets werden sicher abgewiesen. Der fokussierte CLI-Smoke deckt
-Allow-/Deny-, Ziel-, Header- und Logging-Fallbacks ab. Vor einem Tag fehlen CI,
-gemessene No-Regression-Coverage, das ausgefüllte DDEV-Abnahmeprotokoll und ein
+Allow-/Deny-, Ziel-, Header- und Logging-Fallbacks ab. PR-/Main-CI ist lokal
+konfiguriert; vor einem Tag fehlen ein grüner Remote-Lauf, gemessene
+No-Regression-Coverage, das ausgefüllte DDEV-Abnahmeprotokoll und ein
 reproduzierbar geprüftes Release-Artefakt. Das Protokoll liegt unter
 `docs/manual-acceptance.md`.
 
