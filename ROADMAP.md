@@ -2,18 +2,16 @@
 
 ## Prüfstatus
 
-**Funktionsstand 2.0.0; Release-Gate in Übernahmephase 1 blockiert.** Ziele werden über WordPress' Host-/Protokollvertrag
+**Funktionsstand 2.0.0; Release-Gate in Übernahmephase 2 blockiert.** Ziele werden über WordPress' Host-/Protokollvertrag
 und `wp_safe_redirect()` begrenzt. Der anonyme Zugriff nutzt eine an die
 Seiten-ID gebundene HMAC-Signatur mit höchstens 60 Minuten Lebensdauer; alte
 Klartext-Secrets werden sicher abgewiesen. Der fokussierte CLI-Smoke deckt
-Allow-/Deny-, Ziel-, Header- und Logging-Fallbacks ab. PR-/Main-CI ist lokal
-konfiguriert; vor einem Tag fehlen ein grüner Remote-Lauf, gemessene
-No-Regression-Coverage, das ausgefüllte DDEV-Abnahmeprotokoll und ein
-reproduzierbar geprüftes Release-Artefakt. Das Protokoll liegt unter
+Allow-/Deny-, Ziel-, Header- und Logging-Fallbacks ab. PR-/Main-CI und die
+PHP-Ratsche von 65,09 Prozent sind remote enforced. Der reproduzierbare
+ZIP-Builder ist konfiguriert. Vor einem Tag fehlen die Annäherung an das
+85-Prozent-Ziel, das ausgefüllte DDEV-Abnahmeprotokoll sowie Installation und
+Rückbau aus dem exakten Artefakt. Das Protokoll liegt unter
 `docs/manual-acceptance.md`.
-
-Der PHPCOV-/Xdebug-Job ist konfiguriert. Eine PHP-Baseline darf erst aus dem
-reproduzierbaren Remote-Lauf übernommen werden und bleibt bis dahin `pending`.
 
 ## P1
 
