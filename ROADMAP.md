@@ -7,9 +7,9 @@ und `wp_safe_redirect()` begrenzt. Der anonyme Zugriff nutzt eine an die
 Seiten-ID gebundene HMAC-Signatur mit höchstens 60 Minuten Lebensdauer; alte
 Klartext-Secrets werden sicher abgewiesen. Der fokussierte CLI-Smoke deckt
 Allow-/Deny-, Ziel-, Header- und Logging-Fallbacks ab. PR-/Main-CI und die
-PHP-Ratsche von 65,09 Prozent sind remote enforced. Der reproduzierbare
-ZIP-Builder ist konfiguriert. Vor einem Tag fehlen die Annäherung an das
-85-Prozent-Ziel, das ausgefüllte DDEV-Abnahmeprotokoll sowie Installation und
+PHP-Ratsche von 99,06 Prozent sind remote enforced. Der reproduzierbare
+ZIP-Builder ist konfiguriert. Vor einem Tag fehlen das ausgefüllte
+DDEV-Abnahmeprotokoll sowie Installation und
 Rückbau aus dem exakten Artefakt. Das Protokoll liegt unter
 `docs/manual-acceptance.md`.
 

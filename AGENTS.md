@@ -31,7 +31,7 @@ Keine Commits, Pushes oder Deployments ohne ausdrückliche Freigabe; nie
 - PHP-Line-Coverage wird gegen eine gemessene No-Regression-Baseline geprüft.
   Neuer oder wesentlich geänderter Code erreicht mindestens 85 Prozent;
   Sicherheitsinvarianten sind unabhängig davon vollständig abgedeckt.
-- Der PHPCOV-/Xdebug-Messjob erzwingt eine PHP-Baseline von 65,09 Prozent; das
+- Der PHPCOV-/Xdebug-Messjob erzwingt eine PHP-Baseline von 99,06 Prozent; das
   separate Ziel für neuen oder wesentlich geänderten Code bleibt 85 Prozent.
 - `scripts/build-release` erzeugt über den kanonischen Workspace-Builder ein
   reproduzierbares Ein-Wurzel-ZIP mit Manifest und SHA-256. Das Artefakt-Gate

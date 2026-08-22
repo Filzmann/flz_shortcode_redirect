@@ -8,7 +8,8 @@ Veröffentlichung ergänzt.
 
 - Reproduzierbare PR-/Main-CI für PHP 8.1 und 8.5 ergänzt.
 - Formale Lizenz- und Abnahmenachweise in den Delivery-Vertrag aufgenommen.
-- PHP-No-Regression-Ratsche bei 65,09 Prozent remote enforced.
+- PHP-No-Regression-Ratsche durch zusätzliche Sicherheits-, Logging- und
+  Blocktests auf 99,06 Prozent angehoben.
 - Reproduzierbaren Ein-Wurzel-ZIP-Bau mit Manifest, SHA-256 und CI-Prüfung
   ergänzt.
 
